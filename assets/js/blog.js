@@ -64,8 +64,8 @@ const showProject = () => {
         document.getElementById("postProject").innerHTML += `
         <div class="card">
         <img src="${projects[i].uploadImage}" alt="post" />
-        <h4>${projects[i].projectName}</h4>
-        <span>durasi : 3 bulan </span>
+        <a class = "details" href="blogdetails.html">${projects[i].projectName}</a>
+        <p>durasi : 3 bulan </p>
         <p>${projects[i].description}</p>
         <div class="technologyIcon">
         ${projects[i].tech1 ? '<img src="./assets/images/js.png" alt="tech1">' : ''}

@@ -1,4 +1,6 @@
-
+.details{
+  font-size: 1.4rem;
+}
 
 nav {
   display: flex;
@@ -64,10 +66,12 @@ form {
   padding: 0 auto;
   margin-top: 20px;
   justify-content: center;
+  
 }
 
 .container div{
   width: 100%;
+ 
 }
 
 .container2 input, .container3 input{
