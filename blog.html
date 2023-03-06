@@ -1,0 +1,183 @@
+<html>
+  <head>
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="assets/css/blog.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+       
+      <div class="nav-left">
+          <ul>
+              <li>
+                  <div>
+                      <img src="./assets/images/brandred.png"width="40px".>
+                  </div>
+               </li>
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="blog.html">My Project</a>
+              </li>
+          </ul>
+      </div>
+     
+      <div class="nav-right">
+                  <a href="ContactForm.html">Contact Me</a>
+      </div>
+  </nav>
+
+<!-- FORM INPUT PROJECT -->
+<div class="container-title">
+  <h1>ADD MY PROJECT</h1>
+</div>
+
+<form onsubmit="getProject(event)">
+<div class="container">  
+  <div class="container2">
+    <label for="project-name">Project Name</label>
+    <input id="project-name" type="text" />
+  </div>
+  
+  <div class="container3">
+    <div>
+      <label for="start-date">Start Date</label>
+      <input id="start-date" type="date" />
+    </div>
+    <div>
+      <label for="end-date">End Date</label>
+      <input id="end-date" type="date" />
+    </div>
+  </div>
+
+  <!-- Form dengan kanvas yang lebih besar -->
+  <div class="container2">
+    <label for="project-description">Description</label>
+    <textarea id="project-description"></textarea>
+  </div>
+  <br>
+  <!-- CHECKBOX TECHNOLOGIES -->
+  <div>
+    <label class="title-tech">Technologies</label>
+
+    <div class="container-tech">
+      <div class="left-tech">
+        <div class="input-tech">
+          <input id="tech1" type="checkbox">
+          <label>JavaScript</label>
+        </div>
+        <div class="input-tech">
+          <input id="tech2" type="checkbox">
+          <label>GoLang</label>
+        </div>
+      </div>
+
+      <div class="right-tech">
+        <div class="input-tech">
+          <input id="tech3" type="checkbox">
+          <label>Python</label>
+        </div>
+        <div class="input-tech">
+          <input id="tech4" type="checkbox">
+          <label>Figma</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- UPLOAD IMAGE -->
+  <div class="container-image">
+    <div class="label-image">
+      <label for="label-image1">
+        Upload Image
+      </label>
+
+      <div class="container-image-upload">
+        <input type="file" name="choose" id="upload-image" accept="image/*">
+        <label for="upload-image">
+          <div class="left-icon">
+            choose
+          </div>
+          <div class="right-icon">
+            <img src="assets/images/2.png"/></label>
+          </div>  
+        </div>
+    </div>
+
+    <!-- BUTTON SUBMIT  -->
+    <div id="submit-button-container">
+      <button id="submit-button">submit</button>
+    </div>
+  </div>
+</form>  
+</div>
+</div>
+
+<!-- LIST PROJECT -->
+
+<section id="listPosts">
+      <h3>My Project</h3>
+      <div class="posts" id="postProject">
+          <div class="card">
+            <a href="./blog-detail.html">
+              <img src="assets/images/MobileApp1.jpg" alt="post" />
+              <h4>Project 1</h4>
+              <span>durasi : 3 bulan</span>
+              <p>App that used for dumbways student, it was deployed and can downloaded on playstore. 
+                Happy download</p>
+              <div class="technologyIcon">
+                <img src="./assets/images/js.png" alt="tech1"/>
+                <img src="./assets/images/go.png" alt="tech2"/>
+                <img src="./assets/images/python.png" alt="tech3"/>
+                <img src="./assets/images/figma.png" alt="tech4"/>
+              </div>
+            </a>
+              <div class="action">
+                <button>edit</button>
+                <button>delete</button>
+              </div>
+            </div>
+          <div class="card">
+            <a href="./blog-detail.html">
+              <img src="assets/images/MobileApp2.jpg" alt="post" />
+              <h4>Project 2</h4>
+              <span>durasi : 3 bulan</span>
+              <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+              <div class="technologyIcon">
+                <img src="./assets/images/js.png" alt="tech1"/>
+                <img src="./assets/images/go.png" alt="tech2"/>
+                <img src="./assets/images/python.png" alt="tech3"/>
+                <img src="./assets/images/figma.png" alt="tech4"/>
+              </div>
+            </a>
+              <div class="action">
+                <button>edit</button>
+                <button>delete</button>
+              </div>
+            </div>
+          <div class="card">
+            <a href="./blog-detail.html">
+              <img src="assets/images/WebApp1.jpg" alt="post" />
+              <h4>Project 3</h4>
+              <span>durasi : 3 bulan</span>
+              <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+              <div class="technologyIcon">
+                <img src="./assets/images/js.png" alt="tech1"/>
+                <img src="./assets/images/go.png" alt="tech2"/>
+                <img src="./assets/images/python.png" alt="tech3"/>
+                <img src="./assets/images/figma.png" alt="tech4"/>
+              </div>
+            </a>
+              <div class="action">
+                <button>edit</button>
+                <button>delete</button>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+  </body>
+  <script type="text/javascript" src="assets/js/blog.js"></script>
+</html>
