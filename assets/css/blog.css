@@ -1,0 +1,280 @@
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+.nav-left {
+  flex: 50%;
+}
+.nav-left ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-left ul li {
+ 
+  margin-right: 25px;[]
+  font-size: 20px;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: black;
+
+}
+
+
+.nav-right {
+  flex: 50%;
+  text-align: end;
+  align-items: center;
+  margin-right: 40px;
+  
+}
+
+.nav-right  a {
+  background-color: black;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 50px;
+  width: 500px;
+}
+
+.container-title {
+  display: flex;
+  padding: 0 auto;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.container div{
+  width: 100%;
+}
+
+.container2 input, .container3 input{
+  width: 100%;
+  height: 40px;
+}
+
+
+.container2 input, .container3 input {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.container2 label, 
+.container3 label, 
+.title-tech,
+.label-image {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.container2 {
+  margin-top: 10px;
+}
+
+.container2 textarea{
+  width: 100%;
+  resize: none;
+  height: 150px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.container3 {
+  margin-top: 10px;
+  gap: 20px;
+  display: flex;
+}
+
+.container-tech {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-tech {
+   
+   display: flex;
+   margin-top: 15px;
+   align-items: center;
+}
+
+.input-tech label {
+  margin-left: 10px;
+}
+
+
+input[type="file"]{
+  display: none;
+}
+
+.container-image-upload {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 0px;
+}
+
+.container-image-upload label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.container-image-upload:hover {
+  background-color: rgb(149, 149, 149);
+}
+
+.left-icon:hover {
+  background-color: rgb(149, 149, 149);
+  color: white;
+}
+
+.right-icon img:hover {
+  background-color: rgba(230, 230, 230, 0.535);
+  border-radius: 25px;
+}
+
+.left-icon {
+  display: flex;
+  color: rgb(200, 200, 200);
+  justify-content: center;
+  margin-right: 60%;
+  padding: 1px 5px;
+  border-radius: 5px;
+  border: 0.5px solid rgb(237, 237, 237);
+  background-color: rgb(237, 237, 237);
+}
+
+.right-icon {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/* BUTTON SUBMIT */
+#submit-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+button:hover{
+background-color: #006bff;
+}
+
+button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  font-size: 20px;
+  padding: 10px 0px;
+  width: 30%;
+}
+
+
+/* PROJECT LIST */
+
+h3{
+font-size: 38px;
+text-align: center;
+padding: 50px 0px;
+}
+
+#listPosts {
+margin-top: 20px;
+background-color: white;
+}
+
+.posts{
+display: grid;
+grid-template-columns: auto auto auto;
+gap: 35px;
+width: 85%;
+margin: 0px auto;
+padding: 20px;
+}
+.card{
+height: 100%;
+border-radius: 10px;
+box-shadow: 1px 10px 10px  #00000030;
+padding: 20px;
+}
+.card a {
+text-decoration: none;
+color: #111727;
+}
+
+.card img {
+width: 100%;
+height: 280px;
+object-fit: cover;
+border-radius: 10px;
+}
+.card h4 {
+font-size: 20px;
+margin-top: 10px;
+}
+.card span {
+font-size: 13px;
+color: #524e4c;
+}
+.card p {
+font-size: 15px;
+padding: 20px 0px;
+}
+
+.technologyIcon{
+display: flex;
+justify-content: center;
+padding: 20px 0px;
+}
+.technologyIcon img {
+width: 35px;
+height: 35px;
+margin-right: 20px;
+}
+.action{
+display: flex;
+gap: 10px;
+padding: 20px 0px;
+}
+.action button {
+width: 100%;
+padding: 5px 12px;
+border-radius: 5px;
+border: none;
+background-color: #111727;
+color: white;
+font-weight: 600;
+font-size: 18px;
+}
+
+
